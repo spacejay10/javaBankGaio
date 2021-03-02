@@ -8,6 +8,7 @@ import java.util.Set;
 /**
  * The bank entity
  */
+
 public class Bank {
 
     private AccountManager accountManager;

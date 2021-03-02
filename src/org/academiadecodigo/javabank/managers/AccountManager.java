@@ -4,13 +4,13 @@ import org.academiadecodigo.javabank.domain.account.Account;
 import org.academiadecodigo.javabank.domain.account.AccountType;
 import org.academiadecodigo.javabank.domain.account.CheckingAccount;
 import org.academiadecodigo.javabank.domain.account.SavingsAccount;
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Responsible for account management
  */
+
 public class AccountManager {
 
     private static int numberAccounts = 0;
