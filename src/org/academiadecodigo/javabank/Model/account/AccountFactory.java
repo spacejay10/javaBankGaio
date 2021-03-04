@@ -1,9 +1,4 @@
-package org.academiadecodigo.javabank.factories;
-
-import org.academiadecodigo.javabank.domain.account.Account;
-import org.academiadecodigo.javabank.domain.account.AccountType;
-import org.academiadecodigo.javabank.domain.account.CheckingAccount;
-import org.academiadecodigo.javabank.domain.account.SavingsAccount;
+package org.academiadecodigo.javabank.Model.account;
 
 /**
  * A factory for creating accounts of different types

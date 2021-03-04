@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.domain.account;
+package org.academiadecodigo.javabank.Model.account;
 
 /**
  * A checking account with no restrictions

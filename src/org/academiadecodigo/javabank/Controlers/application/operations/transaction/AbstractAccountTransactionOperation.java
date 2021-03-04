@@ -1,12 +1,12 @@
-package org.academiadecodigo.javabank.application.operations.transaction;
+package org.academiadecodigo.javabank.Controlers.application.operations.transaction;
 
 import org.academiadecodigo.bootcamp.Prompt;
 import org.academiadecodigo.bootcamp.scanners.integer.IntegerSetInputScanner;
 import org.academiadecodigo.bootcamp.scanners.precisiondouble.DoubleInputScanner;
-import org.academiadecodigo.javabank.application.BankApplication;
-import org.academiadecodigo.javabank.application.Messages;
-import org.academiadecodigo.javabank.application.operations.AbstractBankOperation;
-import org.academiadecodigo.javabank.managers.AccountManager;
+import org.academiadecodigo.javabank.Controlers.BankApplication;
+import org.academiadecodigo.javabank.Controlers.application.Messages;
+import org.academiadecodigo.javabank.Controlers.application.operations.AbstractBankOperation;
+import org.academiadecodigo.javabank.Controlers.AccountManager;
 
 /**
  * A generic account transaction to be used as a base for concrete transaction implementations
@@ -69,30 +69,6 @@ public abstract class AbstractAccountTransactionOperation extends AbstractBankOp
 
         return builder.toString();
     }
-
-    /**
-     * Prompts the user for an account number
-     *
-     * @return the account id
-     */
-    protected int scanAccount() {
-        IntegerSetInputScanner scanner = new IntegerSetInputScanner(customer.getAccountIds());
-        scanner.setMessage(Messages.CHOOSE_ACCOUNT);
-        scanner.setError(Messages.ERROR_INVALID_ACCOUNT);
-
-        return prompt.getUserInput(scanner);
-    }
-
-    /**
-     * Prompts the user for a transaction amount
-     *
-     * @return the amount to be transactioned
-     */
-    protected double scanAmount() {
-        DoubleInputScanner scanner = new DoubleInputScanner();
-        scanner.setMessage(Messages.CHOOSE_AMOUNT);
-        scanner.setError(Messages.ERROR_INVALID_AMOUNT);
-
-        return prompt.getUserInput(scanner);
-    }
 }
+
+

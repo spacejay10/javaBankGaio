@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.domain.account;
+package org.academiadecodigo.javabank.Model.account;
 
 /**
  * Common interface for bank accounts, provides methods to access account

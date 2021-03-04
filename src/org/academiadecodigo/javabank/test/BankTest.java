@@ -1,9 +1,9 @@
 package org.academiadecodigo.javabank.test;
 
-import org.academiadecodigo.javabank.domain.Bank;
-import org.academiadecodigo.javabank.domain.Customer;
-import org.academiadecodigo.javabank.domain.account.AccountType;
-import org.academiadecodigo.javabank.managers.AccountManager;
+import org.academiadecodigo.javabank.Model.Bank;
+import org.academiadecodigo.javabank.Model.Customer;
+import org.academiadecodigo.javabank.Model.account.AccountType;
+import org.academiadecodigo.javabank.Controlers.AccountManager;
 
 public class BankTest {
 

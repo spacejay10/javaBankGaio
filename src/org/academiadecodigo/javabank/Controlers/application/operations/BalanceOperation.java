@@ -1,10 +1,9 @@
-package org.academiadecodigo.javabank.application.operations;
+package org.academiadecodigo.javabank.Controlers.application.operations;
 
-import org.academiadecodigo.javabank.application.BankApplication;
-import org.academiadecodigo.javabank.application.Messages;
-import org.academiadecodigo.javabank.application.UserOptions;
-import org.academiadecodigo.javabank.domain.account.Account;
-
+import org.academiadecodigo.javabank.Controlers.BankApplication;
+import org.academiadecodigo.javabank.Controlers.application.Messages;
+import org.academiadecodigo.javabank.Controlers.application.UserOptions;
+import org.academiadecodigo.javabank.Model.account.Account;
 import java.text.DecimalFormat;
 import java.util.Set;
 
@@ -17,20 +16,10 @@ public class BalanceOperation extends AbstractBankOperation {
 
     private DecimalFormat df = new DecimalFormat("#.##");
 
-    /**
-     * Creates a new {@code BalanceOperation}
-     *
-     * @see AbstractBankOperation#AbstractBankOperation(BankApplication)
-     */
     public BalanceOperation(BankApplication bankApplication) {
         super(bankApplication);
     }
 
-    /**
-     * Executes this bank operation, printing the balance for the customer accounts
-     *
-     * @see Operation#execute()
-     */
     @Override
     public void execute() {
 

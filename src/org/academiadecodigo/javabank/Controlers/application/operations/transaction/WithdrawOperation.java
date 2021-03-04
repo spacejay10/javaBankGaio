@@ -1,7 +1,9 @@
-package org.academiadecodigo.javabank.application.operations.transaction;
+package org.academiadecodigo.javabank.Controlers.application.operations.transaction;
 
-import org.academiadecodigo.javabank.application.BankApplication;
-import org.academiadecodigo.javabank.application.UserOptions;
+import org.academiadecodigo.javabank.Controlers.BankApplication;
+import org.academiadecodigo.javabank.Controlers.application.UserOptions;
+import org.academiadecodigo.javabank.View.MenuAccountNumber;
+import org.academiadecodigo.javabank.View.MenuChooseAmount;
 
 /**
  * An account transaction used to withdraw an amount
@@ -33,8 +35,8 @@ public class WithdrawOperation extends AbstractAccountTransactionOperation {
             return;
         }
 
-        Integer accountId = scanAccount();
-        Double amount = scanAmount();
+        Integer accountId = MenuAccountNumber();
+        Double amount = MenuChooseAmount();
 
         if (customer.getAccountIds().contains(accountId)) {
             accountManager.withdraw(accountId, amount);
