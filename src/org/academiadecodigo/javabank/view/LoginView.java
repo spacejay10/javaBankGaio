@@ -1,5 +1,4 @@
 package org.academiadecodigo.javabank.view;
-
 import org.academiadecodigo.bootcamp.scanners.integer.IntegerSetInputScanner;
 import org.academiadecodigo.javabank.controller.LoginController;
 

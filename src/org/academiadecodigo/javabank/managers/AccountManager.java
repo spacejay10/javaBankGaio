@@ -1,8 +1,8 @@
 package org.academiadecodigo.javabank.managers;
 
 import org.academiadecodigo.javabank.factories.AccountFactory;
-import org.academiadecodigo.javabank.model.account.Account;
-import org.academiadecodigo.javabank.model.account.AccountType;
+import org.academiadecodigo.javabank.Service.Account;
+import org.academiadecodigo.javabank.Service.AccountType;
 
 import java.util.HashMap;
 import java.util.Map;

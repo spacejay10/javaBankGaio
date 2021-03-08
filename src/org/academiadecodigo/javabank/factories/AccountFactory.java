@@ -1,7 +1,7 @@
 package org.academiadecodigo.javabank.factories;
 
-import org.academiadecodigo.javabank.model.account.Account;
-import org.academiadecodigo.javabank.model.account.AccountType;
+import org.academiadecodigo.javabank.Service.Account;
+import org.academiadecodigo.javabank.Service.AccountType;
 import org.academiadecodigo.javabank.model.account.CheckingAccount;
 import org.academiadecodigo.javabank.model.account.SavingsAccount;
 

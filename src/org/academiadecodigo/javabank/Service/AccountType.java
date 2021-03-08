@@ -1,4 +1,7 @@
-package org.academiadecodigo.javabank.model.account;
+package org.academiadecodigo.javabank.Service;
+
+import org.academiadecodigo.javabank.model.account.CheckingAccount;
+import org.academiadecodigo.javabank.model.account.SavingsAccount;
 
 /**
  * The possible {@link Account} types

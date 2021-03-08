@@ -1,6 +1,6 @@
 package org.academiadecodigo.javabank.model;
 
-import org.academiadecodigo.javabank.model.account.Account;
+import org.academiadecodigo.javabank.Service.Account;
 
 import java.util.HashMap;
 import java.util.HashSet;

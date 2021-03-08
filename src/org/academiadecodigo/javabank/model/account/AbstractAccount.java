@@ -1,5 +1,8 @@
 package org.academiadecodigo.javabank.model.account;
 
+import org.academiadecodigo.javabank.Service.Account;
+import org.academiadecodigo.javabank.Service.AccountType;
+
 /**
  * A generic account domain entity to be used as a base for concrete types of accounts
  * @see Account

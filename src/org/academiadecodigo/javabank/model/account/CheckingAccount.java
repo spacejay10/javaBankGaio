@@ -1,5 +1,8 @@
 package org.academiadecodigo.javabank.model.account;
 
+import org.academiadecodigo.javabank.Service.Account;
+import org.academiadecodigo.javabank.Service.AccountType;
+
 /**
  * A checking account with no restrictions
  * @see Account

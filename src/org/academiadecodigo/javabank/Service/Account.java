@@ -1,4 +1,4 @@
-package org.academiadecodigo.javabank.model.account;
+package org.academiadecodigo.javabank.Service;
 
 /**
  * Common interface for bank accounts, provides methods to access account
