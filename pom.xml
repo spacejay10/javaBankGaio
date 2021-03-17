@@ -9,7 +9,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.academiadecodigo.bootcamp</groupId>
             <artifactId>prompt-view</artifactId>
@@ -66,7 +65,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-
 </project>
