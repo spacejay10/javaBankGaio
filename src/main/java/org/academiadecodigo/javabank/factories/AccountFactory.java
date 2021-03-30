@@ -8,6 +8,7 @@ import org.academiadecodigo.javabank.persistence.model.account.SavingsAccount;
 /**
  * A factory for creating accounts of different types
  */
+
 public class AccountFactory {
 
     /**
