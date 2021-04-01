@@ -139,9 +139,9 @@
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
                     <server>tomcat</server>
-                    <username>tomcat</username>
-                    <password>tomcat</password>
-                    <path>/javabank2</path>
+                    <username>gaio</username>
+                    <password>gaio</password>
+                    <path>/javabank</path>
                 </configuration>
             </plugin>
 
