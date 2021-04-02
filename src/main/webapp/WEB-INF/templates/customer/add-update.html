@@ -2,6 +2,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
     <thymeleaf th:replace="header :: header" />
+
+    <div th:styleappend = "${#fields.hasErrors('firstName')}?'th:replace="errors :: errors"'"></div>
+
 </head>
 <body>
 <div class="container">
@@ -22,25 +25,37 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">First Name:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" th:field="*{firstName}"/>
+                        <input type="text" class="form-control" th:field="*{firstName}" th:styleappend = "${#fields.hasErrors('firstName')}?'Background-color:red;'"/>
+                        <span th:if="${#fields.errors('firstName')}" th:errors="*{firstName}">
+                            First Name field error messages
+                        </span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Last Name:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" th:field="*{lastName}"/>
+                        <input type="text" class="form-control" th:field="*{lastName}" th:styleappend = "${#fields.hasErrors('lastName')}?'Background-color:red;'"/>
+                        <span th:if="${#fields.errors('lastName')}" th:errors="*{lastName}">
+                            First Name field error messages
+                        </span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Email:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" th:field="*{email}"/>
+                        <input type="text" class="form-control" th:field="*{email}" th:styleappend = "${#fields.hasErrors('email')}?'Background-color:red;'"/>
+                        <span th:if="${#fields.errors('email')}" th:errors="*{email}">
+                            First Name field error messages
+                        </span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Phone:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" th:field="*{phone}"/>
+                        <input type="text" class="form-control" th:field="*{phone}" th:styleappend = "${#fields.hasErrors('phone')}?'Background-color:red;'"/>
+                        <span th:if="${#fields.errors('phone')}" th:errors="*{phone}">
+                            First Name field error messages
+                        </span>
                     </div>
                 </div>
                 <div class="row">
